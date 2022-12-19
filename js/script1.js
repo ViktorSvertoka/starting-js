@@ -10,4 +10,4 @@ const message = 'Добро пожаловать!';
 const isOpen = true;
 const sholdConfirm = false;
 
-console.log(totalPrice);
+console.log('Цена', totalPrice);

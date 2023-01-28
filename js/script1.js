@@ -1,17 +1,27 @@
-function calculateEngravingPrice(message, pricePerWord) {
-  // Change code below this line
-  if ((message === 'JavaScript is in my blood', pricePerWord === 10)) {
-    return 50;
-  } else if (
-    (message === 'Web-development is creative work', pricePerWord === 20)
+function makeArray(firstArray, secondArray, maxLength) {
+  let newArray = [];
+  let i = 0;
+  let j = 0;
+  while (
+    i < firstArray.length &&
+    j < secondArray.length &&
+    newArray.length < maxLength
   ) {
-    return 80;
-  } else if ((message === 'JavaScript is in my blood', pricePerWord === 20)) {
-    return 100;
-  } else if (
-    (message === 'Web-development is creative work', pricePerWord === 40)
-  ) {
-    return 160;
+    if (i < firstArray.length) {
+      newArray.push(firstArray[i]);
+      i++;
+    }
+    if (j < secondArray.length) {
+      newArray.push(secondArray[j]);
+      j++;
+    }
   }
-  // Change code above this line
+  return newArray;
 }
+
+console.log(makeArray(['Mango', 'Poly'], ['Ajax', 'Chelsea'], 3));
+console.log(makeArray(['Mango', 'Poly', 'Houston'], ['Ajax', 'Chelsea'], 4));
+console.log(makeArray(['Mango'], ['Ajax', 'Chelsea', 'Poly', 'Houston'], 3));
+console.log(makeArray(['Earth', 'Jupiter'], ['Neptune', 'Uranus'], 2));
+console.log(makeArray(['Earth', 'Jupiter'], ['Neptune', 'Uranus'], 4));
+console.log(makeArray(['Earth', 'Jupiter'], ['Neptune', 'Uranus', 'Venus'], 0));

@@ -1,13 +1,9 @@
-const name = 'Repair Droid';
-const price = 2500;
-const image = 'https://via.placeholder.com/640x480';
-const tags = ['on sale', 'trending', 'best buy'];
+const emailInputName = 'email';
+const passwordInputName = 'password';
 
-const product = {
+const credentials = {
   // Change code below this line
-  name,
-  price,
-  image,
-  tags,
+  [emailInputName]: 'henry.carter@aptmail.com',
+  [passwordInputName]: 'jqueryismyjam',
   // Change code above this line
 };

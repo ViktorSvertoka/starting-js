@@ -4,4 +4,9 @@ const apartment = {
   rating: 4,
   price: 2153,
   tags: ['premium', 'promoted', 'top'],
+  owner: {
+    name: 'Henry',
+    phone: '982-126-1588',
+    email: 'henry.carter@aptmail.com',
+  },
 };

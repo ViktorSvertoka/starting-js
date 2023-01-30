@@ -1,20 +1,7 @@
-function makeArray(firstArray, secondArray, maxLength) {
-  let newArray = [];
-  let i = 0;
-  let j = 0;
-  while (
-    i < firstArray.length &&
-    j < secondArray.length &&
-    newArray.length < maxLength
-  ) {
-    if (i < firstArray.length) {
-      newArray.push(firstArray[i]);
-      i++;
-    }
-    if (j < secondArray.length) {
-      newArray.push(secondArray[j]);
-      j++;
-    }
-  }
-  return newArray;
-}
+const apartment = {
+  imgUrl: 'https://via.placeholder.com/640x480',
+  descr: 'Spacious apartment in the city center',
+  rating: 4,
+  price: 2153,
+  tags: ['premium', 'promoted', 'top'],
+};

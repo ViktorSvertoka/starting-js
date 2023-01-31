@@ -1,11 +1,8 @@
-function countProps(object) {
-  // Change code below this line
-
-  let propCount = 0;
-
-  const keys = Object.keys(object);
-
-  return keys.length;
-
-  // Change code above this line
-}
+const apartment = {
+  descr: 'Spacious apartment in the city center',
+  rating: 4,
+  price: 2153,
+};
+// Change code below this line
+const keys = Object.keys(apartment);
+const values = Object.values(apartment);

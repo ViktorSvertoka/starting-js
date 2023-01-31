@@ -1,9 +1,18 @@
-const emailInputName = 'email';
-const passwordInputName = 'password';
-
-const credentials = {
-  // Change code below this line
-  [emailInputName]: 'henry.carter@aptmail.com',
-  [passwordInputName]: 'jqueryismyjam',
-  // Change code above this line
+const keys = [];
+const values = [];
+const advert = {
+  service: 'apt',
 };
+const apartment = Object.create(advert);
+apartment.descr = 'Spacious apartment in the city center';
+apartment.rating = 4;
+apartment.price = 2153;
+
+for (const key in apartment) {
+  // Change code below this line
+  if (apartment.hasOwnProperty(key)) {
+    keys.push(key);
+    values.push(apartment[key]);
+  }
+  // Change code above this line
+}

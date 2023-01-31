@@ -1,9 +1,11 @@
 function countProps(object) {
+  // Change code below this line
+
   let propCount = 0;
-  for (let key in object) {
-    if (object.hasOwnProperty(key)) {
-      propCount++;
-    }
-  }
-  return propCount;
+
+  const keys = Object.keys(object);
+
+  return keys.length;
+
+  // Change code above this line
 }

@@ -1,15 +1,4 @@
+const scores = [89, 64, 42, 17, 93, 51, 26];
 // Change code below this line
-function calculateMeanTemperature(forecast) {
-  const {
-    today: { low: todayLow, high: todayHigh },
-    tomorrow: { low: tomorrowLow, high: tomorrowHigh },
-  } = forecast;
-
-  // const todayLow = forecast.today.low;
-  // const todayHigh = forecast.today.high;
-  // const tomorrowLow = forecast.tomorrow.low;
-  // const tomorrowHigh = forecast.tomorrow.high;
-
-  // Change code above this line
-  return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
-}
+const bestScore = Math.max(...scores);
+const worstScore = Math.min(...scores);

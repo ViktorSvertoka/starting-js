@@ -1,9 +1,14 @@
 const atTheOldToad = {
   potions: ['Speed potion', 'Dragon breath', 'Stone skin'],
-  addPotion(potionName) {
+  updatePotionName(oldName, newName) {
     // Change code below this line
 
-    this.potions.push(potionName);
+    this.potions = this.potions.map(potion => {
+      if (potion === oldName) {
+        return newName;
+      }
+      return potion;
+    });
 
     // Change code above this line
   },

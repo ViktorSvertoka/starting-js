@@ -1,11 +1,16 @@
-const firstGroupScores = [64, 42, 93];
-const secondGroupScores = [89, 14, 51, 26];
-const thirdGroupScores = [29, 47, 18, 97, 81];
-// Change code below this line
-const allScores = [
-  ...firstGroupScores,
-  ...secondGroupScores,
-  ...thirdGroupScores,
-];
-const bestScore = Math.max(...allScores);
-const worstScore = Math.min(...allScores);
+function makeTask(data) {
+  const completed = false;
+  const category = 'General';
+  const priority = 'Normal';
+  // Change code below this line
+
+  let newTask = {
+    text: data.text,
+    category: data.category || category,
+    priority: data.priority || priority,
+    completed,
+  };
+
+  return newTask;
+  // Change code above this line
+}

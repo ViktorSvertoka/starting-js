@@ -1,12 +1,9 @@
-// Change code below this line
-function addOverNum(num, ...args) {
-  let total = 0;
-
-  for (const arg of args) {
-    if (arg > num) {
-      total += arg;
+function findMatches(array, ...values) {
+  const matches = [];
+  for (let value of values) {
+    if (array.indexOf(value) !== -1) {
+      matches.push(value);
     }
   }
-  return total;
-  // Change code above this line
+  return matches;
 }

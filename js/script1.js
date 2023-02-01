@@ -1,13 +1,7 @@
-const userColorEye = '';
+const atTheOldToad = {
+  // Change code below this line
 
-let user = '';
+  potions: [],
 
-let userName = '';
-
-userName = 'Вася';
-
-user = userName;
-
-console.log(user);
-
-//простые примеры
+  // Change code above this line
+};

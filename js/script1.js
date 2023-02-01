@@ -1,32 +1,15 @@
-const forecast = {
-  today: {
-    low: 28,
-    high: 32,
-    icon: 'https://www.flaticon.com/svg/static/icons/svg/861/861059.svg',
-  },
-  tomorrow: {
-    low: 27,
-    high: 31,
-  },
-};
 // Change code below this line
-const {
-  today: {
-    low: lowToday,
-    high: highToday,
-    icon: todayIcon = 'https://www.flaticon.com/svg/static/icons/svg/861/861059.svg',
-  },
-  tomorrow: {
-    low: lowTomorrow,
-    high: highTomorrow,
-    icon: tomorrowIcon = 'https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg',
-  },
-} = forecast;
+function calculateMeanTemperature(forecast) {
+  const {
+    today: { low: todayLow, high: todayHigh },
+    tomorrow: { low: tomorrowLow, high: tomorrowHigh },
+  } = forecast;
 
-// const highToday = forecast.today.high;
-// const lowToday = forecast.today.low;
-// const todayIcon = forecast.today.icon;
+  // const todayLow = forecast.today.low;
+  // const todayHigh = forecast.today.high;
+  // const tomorrowLow = forecast.tomorrow.low;
+  // const tomorrowHigh = forecast.tomorrow.high;
 
-// const highTomorrow = forecast.tomorrow.high;
-// const lowTomorrow = forecast.tomorrow.low;
-// const tomorrowIcon = forecast.tomorrow.icon;
+  // Change code above this line
+  return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+}

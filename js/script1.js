@@ -1,16 +1,12 @@
-function makeTask(data) {
-  const completed = false;
-  const category = 'General';
-  const priority = 'Normal';
-  // Change code below this line
+// Change code below this line
+function addOverNum(num, ...args) {
+  let total = 0;
 
-  let newTask = {
-    text: data.text,
-    category: data.category || category,
-    priority: data.priority || priority,
-    completed,
-  };
-
-  return newTask;
+  for (const arg of args) {
+    if (arg > num) {
+      total += arg;
+    }
+  }
+  return total;
   // Change code above this line
 }

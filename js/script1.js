@@ -1,9 +1,10 @@
 const atTheOldToad = {
   potions: ['Speed potion', 'Dragon breath', 'Stone skin'],
-  // Change code below this line
+  addPotion(potionName) {
+    // Change code below this line
 
-  getPotions() {
-    return this.potions;
+    this.potions.push(potionName);
+
+    // Change code above this line
   },
-  // Change code above this line
 };

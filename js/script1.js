@@ -1,7 +1,11 @@
-function calculateTotalPrice(orderedItems) {
-  let totalPrice = 0;
+function filterArray(numbers, value) {
+  const filteredNumbers = [];
 
-  orderedItems.forEach(item => (totalPrice += item));
+  numbers.forEach(number => {
+    if (number > value) {
+      filteredNumbers.push(number);
+    }
+  });
 
-  return totalPrice;
+  return filteredNumbers;
 }

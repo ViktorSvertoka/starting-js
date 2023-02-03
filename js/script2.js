@@ -32,3 +32,16 @@ const callback2 = function (value) {
 
 const r2 = filter([1, 2, 3, 4, 5, 6, 7, 8], callback2);
 console.log(r2);
+
+const fruits = [
+  { name: 'apples', quantity: 200, isFresh: true },
+  { name: 'grapes', quantity: 150, isFresh: false },
+  { name: 'bananas', quantity: 100, isFresh: true },
+];
+
+const getFruitsWithQuantity = function (fruit) {
+  return fruit.quantity >= 120;
+};
+
+const r3 = filter(fruits, getFruitsWithQuantity);
+console.log(r3);

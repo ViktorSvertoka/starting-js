@@ -1,35 +1,11 @@
-const doMath = function (a, b, callback) {
-  const result = callback(a, b);
+// отложенный вызов: интервалы
 
-  console.log(result);
+const callback = function () {
+  console.log('Через 3 секунды внутри колбека в таймауте');
 };
 
-// const add = function (x, y) {
-//   return x + y;
-// };
+console.log('В коде перед таймаутом');
 
-// const sub = function (x, y) {
-//   return x - y;
-// };
+setTimeout(callback, 2000);
 
-doMath(2, 3, function (x, y) {
-  return x + y;
-});
-
-doMath(
-  10,
-  8,
-  function (x, y) {
-    return x - y;
-  },
-  function (x, y) {
-    return x - y;
-  },
-  function (x, y) {
-    return x - y;
-  },
-);
-
-// можно внутрь вкладывать сколько угодно функций
-
-//функция это значение, как число, строка и тд
+console.log('В коде после таймаута');

@@ -28,3 +28,14 @@ h2 {
 .yellow {
   color: rgb(231, 231, 0);
 }
+
+.wrap {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  border-radius: 50%;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}

@@ -109,7 +109,7 @@ const tagsStats = allTags.reduce((acc, tag) => {
     [tag]: acc[tag] ? acc[tag] + 1 : 1,
   };
 }, {});
-// console.log(tagsStats);
+console.log(tagsStats);
 
 // если свойство с ключом tag есть. увеличить его значение на 1
 // если свойствоства нет с таким ключом что в tag, сделать и записать 1

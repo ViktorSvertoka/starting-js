@@ -26,7 +26,7 @@ numbers.sort((curEl, nextEl) => {
   return nextEl - curEl;
 });
 
-console.log(numbers);
+// console.log(numbers);
 
 /*
  * Как сделать копию массива чтобы не сортировать оригинальный

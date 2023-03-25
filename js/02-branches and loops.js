@@ -132,26 +132,26 @@
  * Цикл for
  */
 
-for (let i = 0; i < 100; i += 1) {
-  console.log(i);
-}
-
-// for (let i = 1; i <= 100; i += 1) {
+// for (let i = 0; i < 100; i += 1) {
 //   console.log(i);
 // }
 
-// for (let i = 80; i <= 100; i += 1) {
-//   console.log(i);
-// }
+// // for (let i = 1; i <= 100; i += 1) {
+// //   console.log(i);
+// // }
 
-// for (let i = 10; i >= 0; i -= 1) {
-//   console.log(i);
-// }
+// // for (let i = 80; i <= 100; i += 1) {
+// //   console.log(i);
+// // }
 
-// for (let i = 10; i > 0; i -= 2) {
-//   console.log(i);
-// }
-console.log('Цикл выполнен');
+// // for (let i = 10; i >= 0; i -= 1) {
+// //   console.log(i);
+// // }
+
+// // for (let i = 10; i > 0; i -= 2) {
+// //   console.log(i);
+// // }
+// console.log('Цикл выполнен');
 
 /*
  * Pre-increment и Post-increment
@@ -211,7 +211,7 @@ console.log('Цикл выполнен');
 // for (let i = min; i <= max; i += 1) {
 //   // проверяем остаток от деления
 //   if (i % 2 !== 0) {
-//     // console.log('Не чётное: ', i);
+//     console.log('Не чётное: ', i);
 //     continue;
 //   }
 

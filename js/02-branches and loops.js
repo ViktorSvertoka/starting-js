@@ -136,21 +136,21 @@ for (let i = 0; i < 100; i += 1) {
   console.log(i);
 }
 
-for (let i = 1; i <= 100; i += 1) {
-  console.log(i);
-}
+// for (let i = 1; i <= 100; i += 1) {
+//   console.log(i);
+// }
 
-for (let i = 80; i <= 100; i += 1) {
-  console.log(i);
-}
+// for (let i = 80; i <= 100; i += 1) {
+//   console.log(i);
+// }
 
-for (let i = 10; i >= 0; i -= 1) {
-  console.log(i);
-}
+// for (let i = 10; i >= 0; i -= 1) {
+//   console.log(i);
+// }
 
-for (let i = 10; i > 0; i -= 1) {
-  console.log(i);
-}
+// for (let i = 10; i > 0; i -= 2) {
+//   console.log(i);
+// }
 console.log('Цикл выполнен');
 
 /*
